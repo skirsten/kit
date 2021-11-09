@@ -11,6 +11,7 @@ import esbuild from 'esbuild';
 export default function (options) {
 	return {
 		name: '@sveltejs/adapter-vercel',
+		serverEntryPoint: '@sveltejs/adapter-vercel/entry',
 
 		async adapt({ utils }) {
 			const dir = '.vercel_build_output';

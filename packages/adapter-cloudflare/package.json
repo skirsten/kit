@@ -12,6 +12,9 @@
 		".": {
 			"import": "./index.js"
 		},
+		"./entry": {
+			"import": "./files/worker.js"
+		},
 		"./package.json": "./package.json"
 	},
 	"types": "index.d.ts",

@@ -12,6 +12,9 @@
 		".": {
 			"import": "./index.js"
 		},
+		"./entry": {
+			"import": "./files/entry.js"
+		},
 		"./package.json": "./package.json"
 	},
 	"main": "index.js",

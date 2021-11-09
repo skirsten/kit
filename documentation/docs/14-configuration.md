@@ -47,6 +47,7 @@ const config = {
 			onError: 'fail'
 		},
 		router: true,
+		serverEntryPoint: null,
 		serviceWorker: {
 			files: (filepath) => !/\.DS_STORE/.test(filepath)
 		},
@@ -194,6 +195,10 @@ See [Prerendering](#ssr-and-javascript-prerender). An object containing zero or 
 ### router
 
 Enables or disables the client-side [router](#ssr-and-javascript-router) app-wide.
+
+### serverEntryPoint
+
+A file path to a custom entry point for the server. Passed to `vite.build.rollupOptions.input`. See [the Rollup docs](https://rollupjs.org/guide/en/#input) for more info.
 
 ### serviceWorker
 

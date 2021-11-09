@@ -12,6 +12,7 @@ import { fileURLToPath } from 'url';
 export default function (options) {
 	return {
 		name: '@sveltejs/adapter-cloudflare-workers',
+		serverEntryPoint: '@sveltejs/adapter-cloudflare-workers/entry',
 
 		async adapt({ utils }) {
 			const { site } = validate_config(utils);

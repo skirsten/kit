@@ -12,6 +12,7 @@ export default function (options) {
 	/** @type {import('@sveltejs/kit').Adapter} */
 	return {
 		name: 'adapter-package-name',
+		serverEntryPoint: 'adapter-package-name/entry',
 		async adapt({ utils, config }) {
 			// adapter implementation
 		}

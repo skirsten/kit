@@ -9,6 +9,7 @@ import * as esbuild from 'esbuild';
 export default function (options = {}) {
 	return {
 		name: '@sveltejs/adapter-cloudflare',
+		serverEntryPoint: '@sveltejs/adapter-cloudflare/entry',
 		async adapt({ utils, config }) {
 			const files = fileURLToPath(new URL('./files', import.meta.url));
 			const target_dir = join(process.cwd(), '.svelte-kit', 'cloudflare');
