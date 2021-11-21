@@ -58,6 +58,7 @@ importers:
 
   examples/svelte-kit-cf-adapter-demo.pages.dev:
     specifiers:
+      '@sveltejs/adapter-cloudflare': workspace:*
       '@sveltejs/kit': workspace:*
       '@typescript-eslint/eslint-plugin': ^4.31.1
       '@typescript-eslint/parser': ^4.31.1
@@ -72,6 +73,7 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.4.3
     devDependencies:
+      '@sveltejs/adapter-cloudflare': link:../../packages/adapter-cloudflare
       '@sveltejs/kit': link:../../packages/kit
       '@typescript-eslint/eslint-plugin': 4.33.0_cc617358c89d3f38c52462f6d809db4c
       '@typescript-eslint/parser': 4.33.0_eslint@7.32.0+typescript@4.4.4

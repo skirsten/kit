@@ -1,2 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>SvelteKit + cloudflare-adapter demo</h1>
+<a rel="external" href="/normal">/normal</a>
+<a href="/kv">/kv</a>
+<a rel="external" href="/kv/my-key">/kv/my-key</a>
+<a rel="external" href="/sample-image">/sample-image</a>
