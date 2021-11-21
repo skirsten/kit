@@ -15,6 +15,7 @@
     "test-basics": "0.0.2",
     "test-options": "0.0.1",
     "hn.svelte.dev": "1.0.0",
+		"svelte-kit-cf-adapter-demo.pages.dev": "1.0.0",
     "realworld.svelte.dev": "1.0.0",
     "sandbox": "1.0.0",
     "svelte-kit-demo": "1.0.0",
