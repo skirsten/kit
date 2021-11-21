@@ -1,0 +1,11 @@
+{
+	"name": "cf-pages-hack",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"build": "git clone --branch $CF_PAGES_BRANCH https://github.com/skirsten/kit.git && cd kit && git checkout $CF_PAGES_COMMIT_SHA && pnpm install --frozen-lockfile && pnpm build && pnpm build --filter=\"svelte-kit-cf-adapter-demo.pages.dev\" && mv examples/svelte-kit-cf-adapter-demo.pages.dev/.svelte-kit/cloudflare ../dist"
+	},
+	"devDependencies": {
+		"pnpm": "^6.22.2"
+	}
+}
