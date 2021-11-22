@@ -1,7 +1,10 @@
 import type { RequestHandler } from '@sveltejs/kit';
+import type { Locals } from 'src/hooks';
 
-export const get: RequestHandler = async () => {
+export const get: RequestHandler<Locals> = async (request) => {
 	return {
-		body: 'hi there'
+		body: {
+			continent: request.locals.continent
+		}
 	};
 };
