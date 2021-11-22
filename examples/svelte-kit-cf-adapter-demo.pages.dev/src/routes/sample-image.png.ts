@@ -15,9 +15,9 @@ export const get: AdapterRequestHandler = async (request) => {
 			adapter: {
 				response: fetch(
 					`https://fakeimg.pl/440x230/282828/eae0d0/?retina=1&text=${encodeURIComponent(
-						`proxied in ${colo}`
+						`proxied by CF in ${colo}`
 					)}`,
-					{ cf: { cacheEverything: true, cacheTtl: 120 } }
+					{ cf: { cacheEverything: true } }
 				)
 			}
 		};

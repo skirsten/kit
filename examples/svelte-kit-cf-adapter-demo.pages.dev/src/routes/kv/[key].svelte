@@ -1,12 +1,13 @@
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
 
-	export const load: Load = async ({ fetch }) => {
-		const res = await fetch('/kv/my-key');
+	export const load: Load = async ({ fetch, page }) => {
+		const key = page.params.key;
+		const res = await fetch(`/kv/${key}.json`);
 		if (res.ok) {
 			const { value } = await res.json();
 			return {
-				props: { value }
+				props: { key, value }
 			};
 		}
 		return {
@@ -16,6 +17,7 @@
 </script>
 
 <script lang="ts">
+	export let key: string;
 	export let value: string;
 </script>
 
@@ -23,4 +25,4 @@
 
 <h2>This page is checking that the interal server-side fetch works</h2>
 
-<p>Loaded <code>{value}</code></p>
+<p><code>{key}: {value}</code></p>
